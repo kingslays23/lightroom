@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(227, 111, 39);
+    background-color:transparent;
+}
+body{
+    background-image: linear-gradient(rgba(3, 12, 49) 60%, rgb(16, 16, 101));
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:coral;
+    transition: 0.8s; 
+    border-color: coral;
+}
+.header{
+   
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgb(13, 12, 11, 0.5) ,rgba(11, 21, 54, 0.8)),url(images/mars-sector-6-USp4Gzr-Hdw-unsplash.jpg);
+    background-position: 20%;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0 0 0 50%;
+    transform: scaleX(1.3);
+
+    
+}
+#img1{
+   
+    height: 45px;
+    width: 35px;
+    padding-left: 40%;
+}
+
+nav{
+    margin: 0px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2% 6%;
+    justify-content: space-between;
+    
+}
+.nav_container{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.logo{
+    display: flex;
+   width: 50%; 
+}
+.logo p{
+    width: 10%;
+    padding-left: 10%;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-links{
+   width: 50%;  
+}
+.nav-links ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul li{
+    background-color: aquamarine;
+    list-style: none;
+    background-color: rgb(227, 111, 39);
+    display: inline-block;
+    padding: 5px;  
+    margin: 0 5px;  
+    border-radius: 2px;
+    animation: fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+.nav-links ul li a{
+    color: rgb(4, 4, 75);
+    font-size: 10px;
+    text-decoration: none;
+}
+.nav-links ul li:hover{
+    color:coral;
+    transition: 0.5s; 
+    border: solid;
+    transform: scale(1.1,1.1);
+}
+@keyframes fade{
+    50%{opacity: 0.5;}
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    
+}
+.preludde{
+    width: 80%;
+    margin: 0 auto;
+}
+.text p{
+    font-size: 10px;
+}
+.text h1{
+    font-size: 35px;
+}
+.hero{
+    margin-top: 5px;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid black;
+    font-size: 13px;
+    
+    cursor: pointer;
+    position: relative;
+}
+.show-menu{
+    opacity: 1;
+}
+.nav_close,
+.nav_toggle{
+    display: none;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+.nav-toggle:hover{
+    color: coral;
+    font-size: 2rem;
+}
+
+.course{
+
+    margin: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+.classes{
+    list-style: none;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px;
+    line-height: 22px;
+}
+.classes li{
+    padding: 5px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 80%;
+    margin: 0 auto;
+      
+}
+.course-ex{
+    flex-basis: 31%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-style: inset;
+    border-radius: 20px;
+    
+    margin: 10px 20px;
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+.course-ex:hover{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(14, 17, 32) , rgb(16, 16, 56));
+    box-shadow: 0 0 20px 0;
+    
+}
+.course-ex:hover p{
+   color: rgb(247, 156, 99);
+   font-size: 15px;
+}
+.course-ex h3{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.course-ex p{
+    font-size: 10px;
+    margin: auto;
+    transition: .5s;
+}
+.list{
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .course-ex{
+        width: 100%;
+   }
+}
+.tutor{
+    height: 50vh;
+}
+.tutor_container{
+    width: 90%;
+    margin: 0 auto;   
+    height: 80%;
+    display: flex;
+    justify-content: center;
+         
+}
+.tutor_img img{
+    height: 80%;
+    border-radius: 20%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(3, 3, 54);
+       
+}
+.tutor_img{
+    width: 50%;    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 3%;
+       
+}
+.tutor_content{
+    width: 50%;
+    height: 25vh;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 3%;
+
+}
+.tutor_content button{
+    width: 90px;
+    background-color: rgb(227, 111, 39);
+    border-radius: 10%;
+}
+.tutor_content a{
+    color: rgb(11, 11, 109);
+    padding: 3px;
+}
+
+
+
+.vision{
+   
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.vision_container{
+    width: 80%;
+    margin: 0 auto;
+}
+.vstat{
+    display: flex;
+    justify-content: space-evenly;
+    width:80%;
+    margin: 0 auto;
+   
+}
+.vstat ul{
+    display: block;
+    padding: 30px 30px; 
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: black;
+}
+.vstat  li{
+    list-style:circle;
+    margin-left: 20px;
+}
+@media(max-width:700px){
+    .vstat{
+        flex-direction: column;
+        margin-left: 10%;
+    }
+}
+
+.contact {
+    margin-top: 10px;
+    background-image:radial-gradient(rgba(1, 5, 21, 0.7),rgba(5, 22, 86, 0.8)),url(images/arpad-czapp-H424WdcQN4Y-unsplash.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 330px;
+}
+.contact h1{
+    padding-top: 30px;
+}
+.non_current{
+    opacity: .6;
+}
+.current button{
+    margin-top: 5px;
+    background-color:rgb(227, 111, 39) ;
+    width: 80px;
+    animation: pop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.current button a{
+    width: 80px;
+    color: rgb(11, 11, 109);
+}
+.free{
+    margin-top: 5px;
+    background-color:rgb(227, 111, 39) ;
+    width: 150px;
+    animation: pop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.free a{
+    color: rgb(11, 11, 109);
+}
+
+
+@keyframes pop{
+    0%{transform: scale(1); opacity: .5;}
+    50%{transform: scale(1.1); opacity: 1;}
+    100%{transform: scale(1); opacity: .5;}
+}
+.contactus_container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contactelements1{
+    height: 15vh;   
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_elements{
+    text-align: center;
+    width: 50%;
+}
+@media(max-width:700px){
+    .contactus_container{
+        width: 95%;
+    }
+}
+
+
+.footer{
+    background-image: linear-gradient(rgb(16, 16, 101) 10%, rgba(3, 12, 49));
+    text-align: center;
+    padding-top: 20px;
+}
+.footer_container{
+    margin: 0 auto;
+    width: 80%;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
