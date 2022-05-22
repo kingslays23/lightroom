@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;;
     animation: font;
     animation-duration: 40s;
     animation-iteration-count: infinite;
     background-color:transparent;
-    font-size: 20px;
+    font-size: 25px;
 }
 body{
 background-color: rgb(10, 24, 80);}
@@ -27,11 +28,11 @@ a:hover{
 }
 .header{
    
-    min-height: 100vh;
+    min-height: 80vh;
     width: 90%;
-    height: 100vh;
-    background-image: radial-gradient(rgb(13, 12, 11, 0.5) ,rgba(11, 21, 54, 0.8)),url(images/mars-sector-6-USp4Gzr-Hdw-unsplash.jpg);
-    background-position: 20%;
+    height: 85vh;
+    background-image: radial-gradient(rgb(13, 12, 11, 0.5) ,rgba(11, 21, 54, 0.8)),url(images/javier-garcia-chavez-bdZ3bzRde5g-unsplash.jpg);
+    background-position: 10%;
     background-size: cover;
     overflow: hidden;
     border-radius: 0 0 50% 50%;
@@ -115,16 +116,22 @@ nav{
     text-align: center;
     width: 70%;
     
+    
 }
 .preludde{
     width: 80%;
     margin: 0 auto;
 }
 .text p{
-    font-size: 20px;
+    font-size: 30px;
 }
 .text h1{
     font-size: 35px;
+}
+@media(min-width: 1100px){
+    .text{
+        width: 85%;
+    }
 }
 .hero{
     margin-top: 5px;
@@ -273,6 +280,7 @@ button{
 .tutor_content button{
     display: inline-block;
     width: 60%;
+    height: 40px;
     border-radius: 10%;
     border-color: rgb(214, 146, 98);
     
@@ -321,11 +329,12 @@ button{
 }
 
 .contact {
+   
     margin-top: 10px;
     background-image:radial-gradient(rgba(1, 5, 21, 0.7),rgba(5, 22, 86, 0.8)),url(images/arpad-czapp-H424WdcQN4Y-unsplash.jpg);
     text-align: center;
     background-size: cover;
-    height: 330px;
+    
 }
 
 .non_current{
@@ -333,13 +342,14 @@ button{
 }
 .current button{
     margin-top: 5px;
-    width: 80px;
+    width: 130px;
     animation: pop;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 .current button a{
-    width: 80px;
+    width: 130px;
+    height: 40px;
     color: rgb(11, 11, 109);
 }
 .free{
@@ -368,7 +378,7 @@ button{
 }
 .contactelements1{
     height: 15vh;   
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
@@ -377,7 +387,7 @@ button{
     text-align: center;
     width: 50%;
 }
-@media(max-width:700px){
+@media(max-width:1100px){
     .contactus_container{
         width: 95%;
     }
