@@ -7,7 +7,7 @@
     animation-duration: 40s;
     animation-iteration-count: infinite;
     background-color:transparent;
-    font-size: 27px;
+    font-size: 25px;
 }
 body{
 background-color: rgb(10, 24, 80);}
@@ -91,7 +91,7 @@ nav{
     animation-duration: 5s;
     animation-iteration-count: infinite;
     border: solid rgb(26, 26, 196);
-    height: 50px;
+    
 }
 .nav-links ul li a{
     margin-top: 3px;
