@@ -2,11 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(227, 111, 39);
+    animation: font;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
     background-color:transparent;
 }
 body{
     background-image: linear-gradient(rgba(3, 12, 49) 60%, rgb(16, 16, 101));
+}
+@keyframes font{
+    0%{color: rgb(227, 111, 39);}
+    25%{color: rgb(244, 154, 10);}
+    50%{color: rgb(232, 193, 22);}
+    75%{color: rgb(244, 154, 10);;}
+    100%{color: rgb(227, 111, 39);}
 }
 a{
     text-decoration: none;
@@ -70,9 +79,7 @@ nav{
 }
 
 .nav-links ul li{
-    background-color: aquamarine;
     list-style: none;
-    background-color: rgb(227, 111, 39);
     display: inline-block;
     padding: 5px;  
     margin: 0 5px;  
@@ -80,6 +87,7 @@ nav{
     animation: fade;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    border-bottom: solid rgb(23, 23, 100);
     
 }
 .nav-links ul li a{
@@ -88,13 +96,14 @@ nav{
     text-decoration: none;
 }
 .nav-links ul li:hover{
+    background-color: blue;
     color:coral;
     transition: 0.5s; 
     border: solid;
     transform: scale(1.1,1.1);
 }
 @keyframes fade{
-    50%{opacity: 0.5;}
+    50%{opacity: 0.8;}
 }
 .text{
     position: absolute;
@@ -253,10 +262,14 @@ p{
     padding: 0 3%;
 
 }
+button{
+    border-color: rgb(214, 146, 98)
+}
 .tutor_content button{
     width: 90px;
-    background-color: rgb(227, 111, 39);
     border-radius: 10%;
+    border-color: rgb(214, 146, 98);
+
 }
 .tutor_content a{
     color: rgb(11, 11, 109);
@@ -315,7 +328,6 @@ p{
 }
 .current button{
     margin-top: 5px;
-    background-color:rgb(227, 111, 39) ;
     width: 80px;
     animation: pop;
     animation-duration: 3s;
@@ -327,7 +339,6 @@ p{
 }
 .free{
     margin-top: 5px;
-    background-color:rgb(227, 111, 39) ;
     width: 150px;
     animation: pop;
     animation-duration: 3s;
@@ -339,9 +350,9 @@ p{
 
 
 @keyframes pop{
-    0%{transform: scale(1); opacity: .5;}
+    0%{transform: scale(1); opacity: .9;}
     50%{transform: scale(1.1); opacity: 1;}
-    100%{transform: scale(1); opacity: .5;}
+    100%{transform: scale(1); opacity: .9;}
 }
 .contactus_container{
     width: 70%;
