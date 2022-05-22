@@ -10,13 +10,16 @@
     font-size: 25px;
 }
 body{
-background-color: rgb(10, 24, 80);}
+background-color: rgb(10, 24, 80);
+text-align: center;
+}
 @keyframes font{
     0%{color: rgb(227, 111, 39);}
     25%{color: rgb(244, 154, 10);}
     50%{color: rgb(232, 193, 22);}
     75%{color: rgb(244, 154, 10);;}
     100%{color: rgb(227, 111, 39);}
+    
 }
 a{
     text-decoration: none;
@@ -40,6 +43,27 @@ a:hover{
 
 
     
+}
+.rrwe{
+    background-color: transparent;
+    border: 5px dotted black;
+    border-radius: 53%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 45vh;
+    animation: cicle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes cicle{
+    50%{transform: rotateZ(40deg); border-color: rgb(221, 222, 218);}
+    75%{transform: rotateZ(90deg);border-color: antiquewhite}
+    100%{transform: rotateZ(60deg);border-color: white}
+}
+.spo{
+    font-size: 20px;
+    color: antiquewhite;
 }
 #img1{
     margin-top: -7px;
